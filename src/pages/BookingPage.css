@@ -1,0 +1,313 @@
+.booking-page {
+  min-height: 100vh;
+  padding: var(--spacing-xl) 0;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-title {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-dark);
+}
+
+.page-intro {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  line-height: 1.8;
+}
+
+.booking-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.calendar-section {
+  background-color: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.calendar-header h2 {
+  font-size: 1.5rem;
+  color: var(--color-text-dark);
+}
+
+.calendar-nav-btn {
+  background-color: var(--color-cream);
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-dark);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.calendar-nav-btn:hover {
+  background-color: var(--color-sage);
+  color: var(--color-white);
+  border-color: var(--color-sage);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--spacing-sm);
+}
+
+.calendar-day {
+  background-color: var(--color-cream);
+  border: 2px solid transparent;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.calendar-day:hover {
+  background-color: var(--color-light-peach);
+  border-color: var(--color-sage);
+}
+
+.calendar-day.selected {
+  background-color: var(--color-sage);
+  color: var(--color-white);
+  border-color: var(--color-sage);
+}
+
+.day-name {
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: var(--spacing-xs);
+  opacity: 0.7;
+}
+
+.day-number {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.time-section {
+  background-color: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.time-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-dark);
+}
+
+.selected-date {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.1rem;
+}
+
+.time-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: var(--spacing-sm);
+  max-height: 400px;
+  overflow-y: auto;
+  padding: var(--spacing-sm);
+}
+
+.time-slot {
+  background-color: var(--color-cream);
+  border: 2px solid transparent;
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  color: var(--color-text-dark);
+}
+
+.time-slot:hover {
+  background-color: var(--color-light-peach);
+  border-color: var(--color-sage);
+}
+
+.time-slot.selected {
+  background-color: var(--color-sage);
+  color: var(--color-white);
+  border-color: var(--color-sage);
+}
+
+.booking-summary {
+  background-color: var(--color-light-peach);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.booking-summary h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-dark);
+}
+
+.summary-details {
+  background-color: var(--color-white);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.summary-details p {
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-dark);
+}
+
+.btn-large {
+  width: 100%;
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: 1.1rem;
+}
+
+.booking-note {
+  margin-top: var(--spacing-sm);
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  text-align: center;
+}
+
+.confirmation-box {
+  max-width: 600px;
+  margin: var(--spacing-xl) auto;
+  background-color: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-icon {
+  width: 80px;
+  height: 80px;
+  background-color: var(--color-sage);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  margin: 0 auto var(--spacing-md);
+}
+
+.confirmation-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-dark);
+}
+
+.confirmation-details {
+  background-color: var(--color-cream);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  margin: var(--spacing-md) 0;
+}
+
+.confirmation-details p {
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-dark);
+  font-size: 1.1rem;
+}
+
+.confirmation-note {
+  margin: var(--spacing-md) 0;
+  color: var(--color-text-light);
+  line-height: 1.8;
+}
+
+.chat-support {
+  text-align: center;
+  padding: var(--spacing-lg);
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.chat-support h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-dark);
+}
+
+.chat-support p {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+}
+
+.btn {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--color-sage);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-soft-brown);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-text-dark);
+  border: 2px solid var(--color-sage);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-sage);
+  color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .calendar-grid {
+    gap: var(--spacing-xs);
+  }
+
+  .calendar-day {
+    padding: var(--spacing-sm);
+  }
+
+  .time-slots-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+}
+
