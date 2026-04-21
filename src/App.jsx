@@ -14,13 +14,13 @@ function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/who-we-are" element={<WhoWeArePage />} />
+        <Route path="/who-we-are" element={<WhoWeArePage />} />
         <Route path="/communication" element={<CommunicationPage />} />
         <Route path="/booking" element={<BookingPage />} />
         <Route path="/chat" element={<ChatPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/payment" element={<PaymentPage />} />
-        <Route path="/donate" element={<DonationPage />} /> */}
+        <Route path="/donate" element={<DonationPage />} />
       </Routes>
     </Layout>
   )
